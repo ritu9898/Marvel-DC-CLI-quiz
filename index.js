@@ -1,6 +1,8 @@
 const rs =require('readline-sync');
 const chalk = require('chalk');
 
+var playerName = rs.question(chalk.blue.bold("Who are you?\n"));
+
 console.log(chalk.blue.bold("Hey, do you like quiz? If no, what about a quiz on your facourite topic? "));
 
 console.log(chalk.blue.bold("Choose an option from below :: "));
