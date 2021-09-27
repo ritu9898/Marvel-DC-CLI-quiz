@@ -70,9 +70,12 @@ function gamePlay(question , answer){
   if(answer.includes(ans.toLowerCase())){
     console.log(chalk.green('Correct'));    
     score++;
+    console.log('Score  : ' + score);    
   }
   else{
-    console.log(chalk.red('Wrong'));    
+    console.log(chalk.red('Wrong'));  
+	score = (score == 0) ? 0 : score - 1;
+    console.log('Score  : ' + score);    
   }
     console.log(chalk.blue('\n------------------------------\n'));    
 } 
