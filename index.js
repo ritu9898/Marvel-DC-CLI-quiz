@@ -74,7 +74,7 @@ function gamePlay(question , answer){
   }
   else{
     console.log(chalk.red('Wrong'));  
-	score = (score == 0) ? 0 : score - 1;
+	// score = (score == 0) ? 0 : score - 1;
     console.log('Score  : ' + score);    
   }
     console.log(chalk.blue('\n------------------------------\n'));    
